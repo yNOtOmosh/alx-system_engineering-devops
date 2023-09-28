@@ -2,8 +2,12 @@
 #initialize a counter
 
 counter=0
-until [ $counter -eq 10 ];
+while [ $counter -lt 10 ];
 do
-echo "Best School"
-((counter++))
+	if [ $counter -eq 9 ]
+	then
+		echo "Hi"
+	fi
+	echo "Best School"
+	((counter++))
 done
