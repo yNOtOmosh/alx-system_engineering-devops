@@ -1,0 +1,20 @@
+
+Have you ever thought about what happens when you type "https://www.google.com" into your browser and hit Enter? In this blog post, we will discover the intricate process that takes place, breaking it down into key components of the web stack. From the initial DNS request to the final interaction with the database, each step plays a crucial role in delivering the web content we see on our screens.
+
+DNS Request: The journey begins with a Domain Name System (DNS) request. The browser needs to find the IP address associated with the domain name "www.google.com." It contacts a DNS server, which translates the human-readable domain name into a machine-readable IP address.
+
+TCP/IP: Once the IP address is obtained, the browser establishes a connection using the Transmission Control Protocol (TCP) and Internet Protocol (IP). TCP ensures reliable data transmission, breaking information into packets and verifying their successful delivery.
+
+Firewall: The firewall acts as a security barrier, monitoring and controlling incoming and outgoing network traffic based on predetermined security rules. It ensures that only legitimate connections are allowed, protecting against unauthorized access.
+
+HTTPS/SSL: Security is paramount on the web, and the Hypertext Transfer Protocol Secure (HTTPS) ensures encrypted communication between the browser and the server. The Secure Sockets Layer (SSL) or its successor, the Transport Layer Security (TLS), secures the data during transit, preventing eavesdropping and tampering.
+
+Load-Balancer: Large-scale websites like Google employ load balancers to distribute incoming traffic across multiple servers. This enhances performance, ensures high availability, and prevents overload on any single server. Load balancers consider factors like server health and current load to make informed routing decisions.
+
+Web Server: The web server is the first point of contact for the browser. It receives the incoming request, processes it, and sends back the appropriate response. Common web servers include Apache, Nginx, and Microsoft Internet Information Services (IIS).
+
+Application Server: For dynamic content, the web server may communicate with an application server. This server executes application logic, retrieves data from databases, and generates the content to be sent back to the web server.
+Database:In the case of web applications requiring data storage, a database comes into play. It stores and retrieves data based on queries from the application server. Common databases include MySQL, PostgreSQL, and MongoDB.
+
+Conclusion: Understanding these processes is crucial for anyone working in software engineering, as it provides insights into the optimizations and considerations needed to ensure a seamless user experience. 
+
